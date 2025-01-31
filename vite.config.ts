@@ -1,10 +1,11 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
+    base: './',
     build: {
-        outDir: 'dist',  // Убедитесь, что путь указан правильно
+        outDir: 'dist',
         rollupOptions: {
-            input: 'index.html'  // Убедитесь, что входной файл указан корректно
+            input: 'index.html'
         }
     }
 });
